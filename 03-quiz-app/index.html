@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+  </head>
+  <body class="bg-[#F1F4FF] flex justify-center items-center min-h-screen">
+    <div
+      class="bg-white text-[#181028] shadow-lg w-[375px] lg:w-[1000px] h-[667px] lg:h-[750px] relative">
+      <div
+        class="bg-gradient-to-r from-[#3CB4DF] to-[#72E5E7] h-1/5 p-6 lg:px-[125px] lg:py-10 text-white">
+        <div class="flex justify-between">
+          <div class="flex gap-5">
+            <div class="flex gap-2 items-center lg:text-2xl">
+              <i class="fa-solid fa-check" style="color: #ffffff"></i>2
+              <small class="text-sm">correct</small>
+            </div>
+            <div class="flex gap-2 items-center lg:text-2xl">
+              <i class="fa-solid fa-xmark" style="color: #ffffff"></i> 1<small
+                class="text-sm"
+                >wrong</small
+              >
+            </div>
+          </div>
+          <div class="flex gap-2 items-center lg:text-2xl">
+            <i class="fa-solid fa-stopwatch" style="color: #ffffff"></i
+            ><span id="time">25:00</span>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col h-4/5 justify-end items-center py-10">
+        <div class="flex flex-col lg:flex-row gap-4">
+          <button
+            class="px-6 py-3 border-2 rounded-md border-[#3CB4DF] text-[#3CB4DF] uppercase lg:text-lg hover:border-[#006c94] hover:text-[#006c94]">
+            Answer later
+          </button>
+          <button
+            class="px-6 py-3 border-2 rounded-md border-[#3CB4DF] text-white bg-[#3CB4DF] uppercase lg:text-lg hover:bg-[#006c94] hover:border-[#006c94]">
+            Send answer
+          </button>
+        </div>
+      </div>
+      <div
+        class="absolute bg-white w-11/12 h-3/5 lg:w-3/4 lg:h-2/3 inset-x-0 top-20 lg:inset-y-0 m-auto shadow-lg p-4 lg:p-8 flex flex-col lg:justify-center">
+        <h2 class="text-neutral-400 font-light lg:text-lg mb-4 p-2">
+          Question 3 (23 remaining)
+        </h2>
+        <p class="lg:text-2xl font-light mb-4 lg:mb-6 p-2">
+          Varius venenatis quis libero. Tortor feugiat, urna erat blandit, wisi
+          mi, non eget orci fermentum?
+        </p>
+        <h2 class="text-neutral-400 font-light lg:text-lg mb-4 p-2">
+          Answer options
+        </h2>
+        <ul>
+          <li
+            class="lg:text-lg font-light flex gap-2 items-center hover:scale-105 p-2 cursor-pointer rounded-lg">
+            <span class="lg:text-2xl font-medium">A</span>Feugiat viverra in in
+            vivamus quis
+          </li>
+          <li
+            class="lg:text-lg font-light flex gap-2 items-center hover:scale-105 p-2 cursor-pointer rounded-lg">
+            <span class="lg:text-2xl font-medium">B</span>Molestie nulla
+            tristique nulla
+          </li>
+          <li
+            class="lg:text-lg font-light flex gap-2 items-center hover:scale-105 p-2 cursor-pointer rounded-lg">
+            <span class="lg:text-2xl font-medium">C</span>Sapien sed lectus in,
+            posuere eros ad nam non duis
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
